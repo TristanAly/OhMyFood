@@ -1,4 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
 html,
 body {
   font-family: "Roboto", sans-serif;
@@ -8,7 +7,11 @@ body {
   overflow-x: hidden;
 }
 :root {
-  --bg-button-color: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  --bg-button-color: linear-gradient(
+    193.33deg,
+    #9356dc -11.44%,
+    #ff79da 123.93%
+  );
   --main-bg-color: #f6f6f6;
   --location-bg-color: #eaeaea;
 }
@@ -96,7 +99,7 @@ header h1 {
   padding: 20px 20px 50px 20px;
 }
 
-.fonctionnement-banderole{
+.fonctionnement-banderole {
   width: 100%;
   height: 73px;
   position: relative;
@@ -109,26 +112,26 @@ header h1 {
   align-items: center;
   margin-bottom: 25px;
 }
-.fonctionnement-banderole span{
+.fonctionnement-banderole span {
   padding-right: 40px;
 }
-.fonctionnement-banderole i{
+.fonctionnement-banderole i {
   padding-left: 30px;
   font-size: 20px;
 }
-.icon-color{
+.icon-color {
   color: gray;
 }
-.icon-color-2{
+.icon-color-2 {
   color: #9356dc;
 }
-.icon-correction{
+.icon-correction {
   padding-right: 10px;
 }
-.banderoles{
+.banderoles {
   padding: 10px;
 }
-.fonctionnement-banderole p{
+.fonctionnement-banderole p {
   position: absolute;
   background-color: #9356dc;
   padding: 3px 8px;
@@ -140,18 +143,18 @@ header h1 {
 }
 
 /* ------------------ restaurants -------------------- */
-.restaurants{
+.restaurants {
   width: 100%;
   padding: 20px 0 20px 20px;
   margin: 0;
 }
-.restaurants-card{
+.restaurants-card {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.card-link{
+.card-link {
   text-decoration: none;
   color: black;
 }
@@ -169,56 +172,56 @@ header h1 {
   height: 180px;
   border-radius: 20px 20px 0 0;
 }
-.card-content{
+.card-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.card-txt{
+.card-txt {
   margin-left: 15px;
 }
-.card-title{
+.card-title {
   margin: 20px 0 8px 0;
 }
-.card-subtitle{
+.card-subtitle {
   margin-top: 0;
   margin-bottom: 15px;
 }
-.like-button{
+.like-button {
   margin: 20px;
   font-size: 25px;
 }
 
 /* ------------------ footer -------------------- */
 
-footer{
+footer {
   width: 100%;
   padding-left: 25px;
   padding-bottom: 20px;
-  background: #353535;;
+  background: #353535;
   color: white;
 }
-footer img{
+footer img {
   width: 100px;
   height: 20px;
   margin: 25px 0 15px 0;
   filter: brightness(0) invert(1);
 }
-.icon-text-footer{
+.icon-text-footer {
   display: flex;
   align-items: center;
   margin: 10px 0;
 }
-.icon-text-footer p{
+.icon-text-footer p {
   margin: 0px;
 }
-.icon-text-footer i{
+.icon-text-footer i {
   width: 11px;
   height: 13px;
   padding-right: 14px;
   font-size: 13px;
 }
-footer ul{
+footer ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -229,7 +232,81 @@ footer li {
 
 @media (min-width: 600px) {
   body {
-    /* background: var(--main-bg-color); */
-    background-color: aquamarine;
+    background: var(--main-bg-color);
+  }
+  /* ------------------ header -------------------- */
+  header h1 {
+    margin-bottom: 0;
+  }
+  #logo {
+    width: 200px;
+    height: 35px;
+  }
+  .location {
+    font-size: 16px;
+  }
+  /* ------------------ exploration -------------------- */
+  .exploration {
+    padding: 40px 0;
+  }
+  .title-m-p {
+    font-size: 40px;
+  }
+  .subtitle-m-p {
+    font-size: 18px;
+    margin: 25px 0;
+  }
+  /* ------------------ fonctionnement -------------------- */
+  .fonctionnement {
+    height: fit-content;
+  }
+  .title {
+    padding-left: 10%;
+  }
+  .banderoles {
+    display: flex;
+    flex-direction: wrap;
+    gap: 25px;
+    padding: 0 10%;
+  }
+
+  /* ------------------ restaurants -------------------- */
+  .restaurants {
+    padding: 50px 10%;
+  }
+
+  .restaurants-card {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .card {
+    width: 75%;
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  }
+  /* ------------------ footer -------------------- */
+
+  footer {
+    width: 97%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+    align-items: flex-end;
+  }
+  footer img {
+    order: 3;
+    margin: 25px 50px 10px 0;
+  }
+  .icon-text-footer {
+    margin: 10px;
+  }
+  footer ul {
+    display: flex;
+    margin: 0 80px 0 30px;
+  }
+  footer li {
+    padding: 0 10px;
   }
 }
