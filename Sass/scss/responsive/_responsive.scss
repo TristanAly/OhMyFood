@@ -1,0 +1,63 @@
+@media (min-width: 600px) {
+    
+    /* ------------------ header -------------------- */
+    header h1 {
+      margin-bottom: 0;
+    }
+    #logo {
+      width: 200px;
+      height: 35px;
+    }
+    .exploration {
+        padding: 40px 0;
+        & .title-m-p {
+            font-size: 40px;
+        }
+        & .subtitle-m-p {
+            font-size: 18px;
+            margin: 25px 0;
+        }
+      }
+      .fonctionnement {
+        height: fit-content;
+        & .title {
+          padding-left: 10%;
+        }
+        & .banderoles {
+          display: flex;
+          flex-direction: wrap;
+          gap: 25px;
+          padding: 0 10%;
+        }
+      }
+
+      .restaurants {
+        padding: 50px 10%;
+      }
+      .restaurants-card {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      footer {
+        width: 97%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 30px;
+        align-items: flex-end;
+        & img {
+          order: 3;
+          margin: 25px 50px 10px 0;
+        }
+        & ul {
+          display: flex;
+          margin: 0 80px 0 30px;
+        }
+        & li {
+          padding: 0 10px;
+        }
+      }
+      .icon-text-footer {
+        margin: 10px;
+      }
+}
