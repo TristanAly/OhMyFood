@@ -2,8 +2,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A la française</title>
-    <link rel="stylesheet" href="./CSS/style2.css" />
+    <title>La note enchantée</title>
+    <link rel="stylesheet" href="./Sass/css/style2.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <i class="fa-solid fa-arrow-left"></i>
+      <a href="javascript:window.history.back();"><i class="fa-solid fa-arrow-left"></i></a>
       <h1>
         <img
           src="./images/logo/ohmyfood@2x.svg"
@@ -24,34 +24,32 @@
       </h1>
     </header>
     <main>
-          <section class="menu-restaurant">
-            <img
-            src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-            alt="La photo d'un plat du restaurant"
-          />
+      <section class="menu-restaurant">
+        <img
+          src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+          alt="La photo d'un plat du restaurant"
+        />
         <div class="restaurant-name">
           <h2>La palette du goût</h2>
           <!-- <i class="fa-regular fa-heart"></i> -->
-          <div>
-            <input type="checkbox" id="heart" checked/>
-            <label for="heart">
-            </label>
-        </div>
+          <div class="like-button">
+            <i class="fa-solid fa-heart"></i>
+          </div>
         </div>
         <div class="restaurant-dish">
           <h4>ENTREES</h4>
-          <a href="#" id="btn" >
-          <article>
-            <div class="content-txt">
-              <h3>Fricassée d'escargots</h3>
-              <p>Au piment d'Espelette </p>
-            </div>
-            <div class="card-price">
-              <p>25<span class="euro">€</span></p>
-            </div>
+          <a href="#" id="btn">
+            <article>
+              <div class="content-txt">
+                <h3>Fricassée d'escargots</h3>
+                <p>Au piment d'Espelette</p>
+              </div>
+              <div class="card-price">
+                <p>25<span class="euro">€</span></p>
+              </div>
+            </article>
             <div class="confirm"><i class="fa-regular fa-heart"></i></div>
-          </article>
-        </a>
+          </a>
           <article>
             <div class="content-txt">
               <h3>Foie gras de canard mi-cuit</h3>
@@ -131,7 +129,7 @@
             </div>
           </article>
         </div>
-        <div class="order-button">
+        <div class="btn">
           <a href="#">Commander</a>
         </div>
       </section>
@@ -148,7 +146,7 @@
       </div>
       <ul>
         <li>Mention légales</li>
-        <li>Contact</li>
+        <li><a href="mailto:">Contact</a></li>
       </ul>
     </footer>
   </body>
