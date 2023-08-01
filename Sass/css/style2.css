@@ -21,7 +21,7 @@ header i {
   font-size: 25px;
 }
 header h1 {
-  margin: 12 auto;
+  margin: 12px auto;
 }
 
 #logo {
@@ -44,7 +44,7 @@ header h1 {
      object-fit: cover;
   position: absolute;
   z-index: -1;
-  top: 50;
+  top: 50px;
 }
 
 .restaurant-name {
@@ -142,7 +142,7 @@ header h1 {
     margin-left: 40%;
   }
   to {
-    margin: left 2px;
+    margin-left: 2px;
     transform: translateX(0%);
   }
 }
