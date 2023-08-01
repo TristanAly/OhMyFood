@@ -6,10 +6,12 @@ body {
   user-select: none;
 }
 header {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   background-color: white;
   & a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: black;
   }
