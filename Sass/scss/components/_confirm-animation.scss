@@ -1,0 +1,37 @@
+.name{
+    flex-grow: 1;
+    width: 10em;
+  }
+  p,
+  h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .box {
+  display: flex;
+  width: 0;
+  transition: all 0.6s;
+  
+  .check {
+    margin-left: 20px;
+    background-color: #99E2D0;
+    border-radius: 20px 0;
+  }
+  & i {
+    margin: 20px 15px;
+    font-size: 22px;
+    color: #efd;
+  } 
+  }
+  .menu {
+  display: flex;
+  padding: 0 20px;
+  margin: auto;
+  overflow: hidden;
+  cursor: pointer;
+  
+  &:hover > .box {
+    width: 3em;
+  }
+  }

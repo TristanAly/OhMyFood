@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+* {
+  font-family: "roboto", sans-serif;
+}
+
 body {
   margin: 0;
   overflow-x: hidden;
@@ -27,6 +31,104 @@ header h1 {
 #logo {
   height: 36px;
   width: 140px;
+}
+
+.like-button input {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  opacity: 0;
+  z-index: 4;
+  cursor: pointer;
+}
+.like-button input:checked ~ .fas {
+  opacity: 1;
+  transition: 1s;
+}
+.like-button input:checked ~ .far {
+  opacity: 0;
+  transition: 1s;
+}
+.like-button .fas {
+  font-size: 25px;
+  position: absolute;
+  z-index: 1;
+  background-image: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: 1s;
+}
+.like-button .far {
+  font-size: 25px;
+  z-index: 2;
+}
+
+.btn {
+  display: flex;
+  width: 218px;
+  height: 50px;
+  border-radius: 30px;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  align-items: center;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.btn a {
+  text-decoration: none;
+  color: white;
+  margin: auto;
+}
+.btn:hover {
+  opacity: 0.95;
+  box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.2509803922);
+  filter: brightness(110%);
+}
+
+.name {
+  flex-grow: 1;
+  width: 10em;
+}
+
+p,
+h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.box {
+  display: flex;
+  width: 0;
+  transition: all 0.6s;
+}
+.box .check {
+  margin-left: 20px;
+  background-color: #99E2D0;
+  border-radius: 20px 0;
+}
+.box i {
+  margin: 20px 15px;
+  font-size: 22px;
+  color: #efd;
+}
+
+.menu {
+  display: flex;
+  padding: 0 20px;
+  margin: auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+.menu:hover > .box {
+  width: 3em;
 }
 
 /* --------------- restaurant Menu ------------------- */
@@ -63,8 +165,10 @@ header h1 {
 
 .restaurant-dish {
   margin-bottom: 35px;
+  animation-duration: 0.6s;
+  animation-name: slidein;
 }
-.restaurant-dish h4 {
+.restaurant-dish h3 {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 300;
@@ -81,187 +185,30 @@ header h1 {
   margin: 10px 20px;
   padding: 5px 20px;
   cursor: pointer;
-}
-.restaurant-dish .slide {
-  animation: linear;
-  animation-delay: 1.1s;
-  animation-duration: 1.5s;
-  animation-name: slidein;
-}
-.restaurant-dish .slide2 {
-  animation: linear;
-  animation-delay: 1.2s;
-  animation-duration: 1.5s;
-  animation-name: slidein;
-}
-.restaurant-dish .slide3 {
-  animation: linear;
-  animation-delay: 1.3s;
-  animation-duration: 1.5s;
-  animation-name: slidein;
-}
-.restaurant-dish .slide4 {
-  animation: linear;
-  animation-delay: 2s;
-  animation-duration: 1.5s;
-  animation-name: slidein;
-}
-.restaurant-dish .slide5 {
-  animation: linear;
-  animation-delay: 2.1s;
-  animation-duration: 1.5s;
-  animation-name: slidein;
-}
-.restaurant-dish .slide6 {
-  animation: linear;
-  animation-delay: 2.2s;
-  animation-duration: 1.5s;
-  animation-name: slidein;
-}
-.restaurant-dish .slide7 {
-  animation: linear;
-  animation-delay: 3s;
-  animation-duration: 1.5s;
-  animation-name: slidein;
-}
-.restaurant-dish .slide8 {
-  animation: linear;
-  animation-delay: 3.1s;
-  animation-duration: 1.5s;
-  animation-name: slidein;
-}
-.restaurant-dish .slide9 {
-  animation: linear;
-  animation-delay: 3.2s;
-  animation-duration: 1s;
+  animation-duration: 0.8s;
   animation-name: slidein;
 }
 @keyframes slidein {
   from {
-    transform: translateX(5%);
-    margin-left: 40%;
+    transform: translateX(40%);
+    opacity: 0;
   }
   to {
-    margin-left: 2px;
+    opacity: 1;
     transform: translateX(0%);
   }
 }
-.restaurant-dish .content-txt h3 {
+.restaurant-dish .content-txt h4 {
   margin: 5px 0;
+  font-size: 18px;
 }
 .restaurant-dish .content-txt p {
   margin: 5px 0;
   font-size: 15px;
 }
-
-.btn {
-  display: flex;
-  width: 218px;
-  height: 50px;
-  border-radius: 30px;
-  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
-  align-items: center;
-  margin: 20px auto;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-}
-.btn a {
-  text-decoration: none;
-  color: white;
-  padding: 15px 30px;
-  margin: auto;
-}
-.btn:hover {
-  opacity: 0.95;
-  box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.2509803922);
-  filter: brightness(110%);
-}
-
-.fonctionnement-banderole {
-  width: 100%;
-  height: 73px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  border-radius: 20px;
-  background-color: #f6f6f6;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
-  align-items: center;
-  margin-bottom: 25px;
-}
-.fonctionnement-banderole span {
-  padding-right: 40px;
-}
-.fonctionnement-banderole i {
-  padding-left: 30px;
-  font-size: 20px;
-}
-.fonctionnement-banderole .icon-color {
-  color: gray;
-}
-.fonctionnement-banderole .icon-color-2 {
-  color: #9356dc;
-}
-.fonctionnement-banderole .icon-correction {
-  padding-right: 10px;
-}
-.fonctionnement-banderole p {
-  position: absolute;
-  background-color: #9356dc;
-  padding: 3px 8px;
-  border-radius: 30px;
-  color: white;
+.restaurant-dish .card-price p {
   font-size: 15px;
-  font-weight: 500;
-  left: -10px;
-}
-
-.card {
-  width: 90%;
-  background-color: white;
-  border-radius: 20px;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
-.card img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 180px;
-  border-radius: 20px 20px 0 0;
-}
-.card .card-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.card .card-content .card-txt {
-  margin-left: 15px;
-}
-.card .card-content .card-txt .card-title {
-  margin: 20px 0 8px 0;
-}
-.card .card-content .card-txt .card-subtitle {
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
-.like-button {
-  margin: 20px;
-  font-size: 25px;
-  cursor: default;
-  position: relative;
-  text-shadow: 0 0px 2px black;
-  color: white;
-}
-.like-button i:hover::before {
-  text-shadow: none;
-  background-image: linear-gradient(#9356dc, #ff79da);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  font-weight: 700;
 }
 
 footer {
@@ -303,45 +250,6 @@ footer a {
   height: 13px;
   padding-right: 14px;
   font-size: 13px;
-}
-
-.name {
-  flex-grow: 1;
-  width: 10em;
-}
-
-p,
-h3 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.box {
-  display: flex;
-  width: 0;
-  transition: all 0.6s;
-}
-.box .check {
-  margin-left: 20px;
-  background-color: #99E2D0;
-  border-radius: 20px 0;
-}
-.box i {
-  margin: 20px 15px;
-  font-size: 22px;
-  color: #efd;
-}
-
-.menu {
-  display: flex;
-  padding: 0 20px;
-  margin: auto;
-  overflow: hidden;
-  cursor: pointer;
-}
-.menu:hover > .box {
-  width: 3em;
 }
 
 @media (min-width: 600px) {
