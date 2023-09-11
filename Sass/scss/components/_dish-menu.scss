@@ -1,27 +1,25 @@
 /* --------------- restaurant Menu ------------------- */
 
-.image_restaurant{
-  position: relative;
-  z-index: 1;
+.image_restaurant {
+  height: 220px;
   & img {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
+    width: 100%;
+    height: 115%;
+    object-fit: cover;
   }
 }
 #bk_white {
   background-color: white;
 }
 .menu-restaurant {
-    width: 100%;
-    padding-bottom: 10px;
-    position: relative;
-    top: -30px;
-    z-index: 2;
-    background-color: $main-bg-color;
-    border-top: solid $main-bg-color;
-    border-radius: 30px 30px 0 0;
-  }
+  width: 100%;
+  padding-bottom: 10px;
+  position: relative;
+  z-index: 2;
+  background-color: $main-bg-color;
+  border-top: solid $main-bg-color;
+  border-radius: 30px 30px 0 0;
+}
   .restaurant-name {
     display: flex;
     justify-content: space-between;
@@ -56,16 +54,7 @@
       padding: 0px 20px;
       cursor: pointer;
     }
-    @keyframes slidein {
-      from {
-        transform: translateX(40%);
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0%);
-      }
-    }
+   
     & .content-txt h4 {
       margin: 5px 0;
       font-size: 18px;
@@ -79,18 +68,47 @@
       font-weight: 700;
     }
   }
-  .slide{  
-    animation-duration: 0.8s;
-    animation-delay: 0s;
-    animation-name: slidein;
+  .slide {
+    animation: fadeentrées 0.8s;
+  }
+  
+  .slide2 {
+    animation: fadeplats 1.4s;
+  }
+  
+  .slide3 {
+    animation: fadepostres 2s;
+  }
+  
+  @keyframes fadeentrées {
+    0% {
+      opacity: 0;
+      transform: translateX(40%);
     }
-  .slide2{
-    animation-duration: 0.8s;
-    animation-delay: 0.3s;
-    animation-name: slidein;
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
     }
-  .slide3{
-    animation-duration: 0.8s;
-    animation-delay: 0.5s;
-    animation-name: slidein;
+  }
+  
+  @keyframes fadeplats {
+    0% {
+      opacity: 0;
+      transform: translateX(80%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  
+  @keyframes fadepostres {
+    0% {
+      opacity: 0;
+      transform: translateX(130%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
   }
