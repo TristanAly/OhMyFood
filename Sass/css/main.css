@@ -236,18 +236,19 @@ body {
   align-items: center;
   padding: 20px;
 }
-.restaurant-name h2 {
+.restaurant-name h1 {
   font-family: "Shrikhand", cursive;
   font-size: 28px;
   font-style: italic;
   font-weight: 400;
   margin: 0;
+  padding-right: 20px;
 }
 
 .restaurant-dish {
   margin-bottom: 35px;
 }
-.restaurant-dish h3 {
+.restaurant-dish h2 {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 300;
@@ -265,7 +266,7 @@ body {
   padding: 0px 20px;
   cursor: pointer;
 }
-.restaurant-dish .content-txt h4 {
+.restaurant-dish .content-txt h3 {
   margin: 5px 0;
   font-size: 18px;
 }
