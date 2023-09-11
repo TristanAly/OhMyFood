@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les délice des sens</title>
-    <link rel="stylesheet" href="./Sass/scss/page/menu.css">
+    <link rel="stylesheet" href="./Sass/css/main.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -15,22 +15,25 @@
   </head>
   <body>
     <header>
-      <a href="javascript:window.history.back();"><i class="fa-solid fa-arrow-left"></i>
-      <h1>
-        <img
-          src="./images/logo/ohmyfood@2x.svg"
-          alt="logo ohmyfood"
-          id="logo"
-        >
-      </h1>
+      <a href="javascript:window.history.back();">
+        <div class="back_button">
+            <i class="fa-solid fa-arrow-left"></i>
+            <img
+            src="./images/logo/ohmyfood@2x.svg"
+            alt="logo ohmyfood"
+            id="logo"
+          >
+        </div>
     </a>
     </header>
-    <main>
-      <section class="menu-restaurant">
+    <main id="bk_white">
+      <div class="image_restaurant">
         <img
-          src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-          alt="La photo d'un plat du restaurant"
-        >
+        src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+        alt="La photo d'un plat du restaurant"
+      >
+      </div>
+      <section class="menu-restaurant">
         <div class="restaurant-name">
           <h2>Le délice des sens</h2>
           <div class="like-button">
@@ -39,9 +42,9 @@
             <i class="far fa-heart"></i>
           </div>
         </div>
-        <div class="restaurant-dish">
+        <div class="restaurant-dish slide">
             <h3>ENTREES</h3>
-              <article class="slide menu">
+              <article class="menu">
                 <div class="content-txt name">
                   <h4>Tartare de thon</h4>
                   <p>Assaisonné au yuzu</p>
@@ -51,11 +54,11 @@
                 </div>
                 <div class="box">
                   <div class="check">
-                    <i class="fa-regular fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-check"></i>
                 </div>
                 </div>
               </article>
-            <article class="slide2 menu">
+            <article class="menu">
               <div class="content-txt name">
                 <h4>Bouchée de homard croustillant </h4>
                 <p>Et sa farandole de petits légumes</p>
@@ -65,11 +68,11 @@
               </div>
               <div class="box">
                 <div class="check">
-                  <i class="fa-regular fa-circle-check"></i>
+                  <i class="fa-solid fa-circle-check"></i>
               </div>
               </div>
             </article>
-            <article class="slide3 menu">
+            <article class="menu">
               <div class="content-txt name">
                 <h4>Velouté de cèpes</h4>
                 <p>Aux truffes</p>
@@ -79,14 +82,14 @@
               </div>
               <div class="box">
                 <div class="check">
-                  <i class="fa-regular fa-circle-check"></i>
+                  <i class="fa-solid fa-circle-check"></i>
               </div>
               </div>
             </article>
           </div>
-        <div class="restaurant-dish">
+        <div class="restaurant-dish slide2">
           <h3>Plats</h3>
-          <article class="slide4 menu">
+          <article class="menu">
             <div class="content-txt name">
               <h4>Poulet rôti aux herbes de Provence</h4>
               <p>Et sa crème de truffe</p>
@@ -96,11 +99,11 @@
             </div>
             <div class="box">
               <div class="check">
-                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-circle-check"></i>
             </div>
             </div>
           </article>
-          <article class="slide5 menu">
+          <article class="menu">
             <div class="content-txt name">
               <h4>Langouste rôtie </h4>
               <p>Et ses légumes de saison</p>
@@ -110,11 +113,11 @@
             </div>
             <div class="box">
               <div class="check">
-                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-circle-check"></i>
             </div>
             </div>
           </article>
-          <article class="slide6 menu">
+          <article class="menu">
             <div class="content-txt name">
               <h4>Côte de bœuf Angus </h4>
               <p>Et sa purée de panais</p>
@@ -124,14 +127,14 @@
             </div>
             <div class="box">
               <div class="check">
-                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-circle-check"></i>
             </div>
             </div>
           </article>
         </div>
-        <div class="restaurant-dish">
+        <div class="restaurant-dish slide3">
           <h3>Desserts</h3>
-          <article class="slide7 menu">
+          <article class="menu">
             <div class="content-txt name">
               <h4>Farandole de desserts</h4>
               <p>Du chef</p>
@@ -141,11 +144,11 @@
             </div>
             <div class="box">
               <div class="check">
-                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-circle-check"></i>
             </div>
             </div>
           </article>
-          <article class="slide8 menu">
+          <article class="menu">
             <div class="content-txt name">
               <h4>Crème brulée </h4>
               <p>Revisitée</p>
@@ -155,11 +158,11 @@
             </div>
             <div class="box">
               <div class="check">
-                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-circle-check"></i>
             </div>
             </div>
           </article>
-          <article class="slide9 menu">
+          <article class="menu">
             <div class="content-txt name">
               <h4>Tiramisu</h4>
               <p>À la noisette</p>
@@ -169,7 +172,7 @@
             </div>
             <div class="box">
               <div class="check">
-                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-circle-check"></i>
             </div>
             </div>
           </article>
@@ -191,7 +194,7 @@
       </div>
       <ul>
         <li>Mention légales</li>
-        <li><a href="mailto:">Contact</a></li>
+        <li><a href="mailto:ohmyfood@mail.fr">Contact</a></li>
       </ul>
     </footer>
   </body>

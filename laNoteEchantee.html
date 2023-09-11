@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La note enchantée</title>
-    <link rel="stylesheet" href="./Sass/scss/page/menu.css">
+    <link rel="stylesheet" href="./Sass/css/main.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -15,22 +15,25 @@
   </head>
   <body>
     <header>
-      <a href="javascript:window.history.back();"><i class="fa-solid fa-arrow-left"></i>
-      <h1>
-        <img
-          src="./images/logo/ohmyfood@2x.svg"
-          alt="logo ohmyfood"
-          id="logo"
-        >
-      </h1>
+      <a href="javascript:window.history.back();">
+        <div class="back_button">
+            <i class="fa-solid fa-arrow-left"></i>
+            <img
+            src="./images/logo/ohmyfood@2x.svg"
+            alt="logo ohmyfood"
+            id="logo"
+          >
+        </div>
     </a>
     </header>
-    <main>
-      <section class="menu-restaurant">
+    <main id="bk_white">
+      <div class="image_restaurant">
         <img
-          src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-          alt="La photo d'un plat du restaurant"
-        >
+        src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+        alt="La photo d'un plat du restaurant"
+      >
+      </div>
+      <section class="menu-restaurant">
         <div class="restaurant-name">
           <h2>La note enchantée</h2>
           <div class="like-button">
@@ -39,9 +42,9 @@
             <i class="far fa-heart"></i>
           </div>
         </div>
-        <div class="restaurant-dish">
+        <div class="restaurant-dish slide">
             <h3>ENTREES</h3>
-              <article class="slide menu">
+              <article class="menu">
                 <div class="content-txt name">
                   <h4>Ravioles de foie gras</h4> 
                   <p>Accompagnées de leur crème à la truffe</p>
@@ -51,11 +54,11 @@
                 </div>
                 <div class="box">
                   <div class="check">
-                    <i class="fa-regular fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-check"></i>
                 </div>
                 </div>
               </article>
-            <article class="slide2 menu">
+            <article class="menu">
               <div class="content-txt name">
                 <h4>Caviar osciètre</h4>
                 <p>Sur blini à la farine de blé noir</p>
@@ -65,11 +68,11 @@
               </div>
               <div class="box">
                 <div class="check">
-                  <i class="fa-regular fa-circle-check"></i>
+                  <i class="fa-solid fa-circle-check"></i>
               </div>
               </div>
             </article>
-            <article class="slide3 menu">
+            <article class="menu">
               <div class="content-txt name">
                 <h4>Homard et espuma de potiron</h4>
                 <p>Marinés aux zestes d'orange</p>
@@ -79,11 +82,11 @@
               </div>
               <div class="box">
                 <div class="check">
-                  <i class="fa-regular fa-circle-check"></i>
+                  <i class="fa-solid fa-circle-check"></i>
               </div>
               </div>
             </article>
-            <article class="slide3 menu">
+            <article class="menu">
               <div class="content-txt name">
                 <h4>Foie gras de canard cuit entier</h4>
                 <p>Confiture de figue et pain toasté</p>
@@ -93,14 +96,14 @@
               </div>
               <div class="box">
                 <div class="check">
-                  <i class="fa-regular fa-circle-check"></i>
+                  <i class="fa-solid fa-circle-check"></i>
               </div>
               </div>
             </article>
           </div>
-        <div class="restaurant-dish">
+        <div class="restaurant-dish slide2">
           <h3>Plats</h3>
-          <article class="slide4 menu">
+          <article class="menu">
             <div class="content-txt name">
               <h4>Noix de coquilles Saint-Jacques</h4>
               <p>Sur lit de purée de céleri-rave</p>
@@ -110,11 +113,11 @@
             </div>
             <div class="box">
               <div class="check">
-                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-circle-check"></i>
             </div>
             </div>
           </article>
-          <article class="slide5 menu">
+          <article class="menu">
             <div class="content-txt name">
               <h4>Langoustine poêlée</h4>
               <p>Purée de patate douce</p>
@@ -124,11 +127,11 @@
             </div>
             <div class="box">
               <div class="check">
-                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-circle-check"></i>
             </div>
             </div>
           </article>
-          <article class="slide6 menu">
+          <article class="menu">
             <div class="content-txt name">
               <h4>Mijoté de queue de bœuf</h4>
               <p>Et riz sauvage aux zestes de citron</p>
@@ -138,14 +141,14 @@
             </div>
             <div class="box">
               <div class="check">
-                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-circle-check"></i>
             </div>
             </div>
           </article>
         </div>
-        <div class="restaurant-dish">
+        <div class="restaurant-dish slide3">
           <h3>Desserts</h3>
-          <article class="slide7 menu">
+          <article class="menu">
             <div class="content-txt name">
               <h4>Macaron noisette et chocolat</h4>
               <p>Glace au caramel brun et sel de Guérande</p>
@@ -155,11 +158,11 @@
             </div>
             <div class="box">
               <div class="check">
-                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-circle-check"></i>
             </div>
             </div>
           </article>
-          <article class="slide8 menu">
+          <article class="menu">
             <div class="content-txt name">
               <h4>Baba au rhum revisité</h4>
               <p>Avec son coulis de citron</p>
@@ -169,11 +172,11 @@
             </div>
             <div class="box">
               <div class="check">
-                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-circle-check"></i>
             </div>
             </div>
           </article>
-          <article class="slide9 menu">
+          <article class="menu">
             <div class="content-txt name">
               <h4>Tarte au citron meringuée</h4>
               <p>Déstructurée</p>
@@ -183,7 +186,7 @@
             </div>
             <div class="box">
               <div class="check">
-                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-circle-check"></i>
             </div>
             </div>
           </article>
@@ -205,7 +208,7 @@
       </div>
       <ul>
         <li>Mention légales</li>
-        <li><a href="mailto:">Contact</a></li>
+        <li><a href="mailto:ohmyfood@mail.fr">Contact</a></li>
       </ul>
     </footer>
   </body>

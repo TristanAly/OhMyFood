@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A la française</title>
-    <link rel="stylesheet" href="./Sass/scss/page/menu.css">
+    <link rel="stylesheet" href="./Sass/css/main.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -15,22 +15,25 @@
   </head>
   <body>
     <header>
-      <a href="javascript:window.history.back();"><i class="fa-solid fa-arrow-left"></i>
-      <h1>
-        <img
-          src="./images/logo/ohmyfood@2x.svg"
-          alt="logo ohmyfood"
-          id="logo"
-        >
-      </h1>
+      <a href="javascript:window.history.back();">
+        <div class="back_button">
+            <i class="fa-solid fa-arrow-left"></i>
+            <img
+            src="./images/logo/ohmyfood@2x.svg"
+            alt="logo ohmyfood"
+            id="logo"
+          >
+        </div>
     </a>
     </header>
-    <main>
-      <section class="menu-restaurant">
+    <main id="bk_white">
+      <div class="image_restaurant">
         <img
-          src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-          alt="La photo d'un plat du restaurant"
-        >
+        src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+        alt="La photo d'un plat du restaurant"
+      >
+      </div>
+      <section class="menu-restaurant">  
         <div class="restaurant-name">
           <h2>À la française</h2>
           <div class="like-button">
@@ -39,9 +42,9 @@
             <i class="far fa-heart"></i>
           </div>
         </div>
-        <div class="restaurant-dish">
+        <div class="restaurant-dish slide">
             <h3>ENTREES</h3>
-              <article class="slide menu">
+              <article class="menu">
                 <div class="content-txt name">
                   <h4>Tartare de poulpe acidulé</h4>
                   <p>Aux zestes d'orange</p>
@@ -51,42 +54,42 @@
                 </div>
                 <div class="box">
                   <div class="check">
-                    <i class="fa-regular fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-check"></i>
                 </div>
                 </div>
               </article>
-            <article class="slide2 menu">
-              <div class="content-txt name">
-                <h4>Velouté de légumes d'antan</h4>
-                <p>Carotte, panais, topinambour</p>
-              </div>
-              <div class="card-price price">
-                <p>35<span class="euro">€</span></p>
-              </div>
-              <div class="box">
-                <div class="check">
-                  <i class="fa-regular fa-circle-check"></i>
-              </div>
-              </div>
-            </article>
-            <article class="slide3 menu">
-              <div class="content-txt name">
-                <h4>Soupe à l'oignon</h4>
-                <p>Revisitée</p>
-              </div>
-              <div class="card-price price">
-                <p>20<span class="euro">€</span></p>
-              </div>
-              <div class="box">
-                <div class="check">
-                  <i class="fa-regular fa-circle-check"></i>
-              </div>
-              </div>
-            </article>
+              <article class="menu">
+                <div class="content-txt name">
+                  <h4>Velouté de légumes d'antan</h4>
+                  <p>Carotte, panais, topinambour</p>
+                </div>
+                <div class="card-price price">
+                  <p>35<span class="euro">€</span></p>
+                </div>
+                <div class="box">
+                  <div class="check">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                </div>
+              </article>
+              <article class="menu">
+                <div class="content-txt name">
+                  <h4>Soupe à l'oignon</h4>
+                  <p>Revisitée</p>
+                </div>
+                <div class="card-price price">
+                  <p>20<span class="euro">€</span></p>
+                </div>
+                <div class="box">
+                  <div class="check">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                </div>
+              </article>
           </div>
-        <div class="restaurant-dish">
+        <div class="restaurant-dish slide2">
           <h3>Plats</h3>
-          <article class="slide4 menu">
+          <article class="menu">
             <div class="content-txt name">
               <h4>Coquilles Saint-Jacques</h4>
               <p>Accompagnées d'une purée de panais</p>
@@ -96,11 +99,11 @@
             </div>
             <div class="box">
               <div class="check">
-                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-circle-check"></i>
             </div>
             </div>
           </article>
-          <article class="slide5 menu">
+          <article class="menu">
             <div class="content-txt name">
               <h4>Magret de canard</h4>
               <p>Et parmentier de pommes de terre</p>
@@ -110,7 +113,7 @@
             </div>
             <div class="box">
               <div class="check">
-                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-circle-check"></i>
             </div>
             </div>
           </article>
@@ -124,14 +127,14 @@
             </div>
             <div class="box">
               <div class="check">
-                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-circle-check"></i>
             </div>
             </div>
           </article>
         </div>
-        <div class="restaurant-dish">
+        <div class="restaurant-dish slide3">
           <h3>Desserts</h3>
-          <article class="slide7 menu">
+          <article class="menu">
             <div class="content-txt name">
               <h4>Pétales de violettes glacés</h4>
               <p>Et purée de noisettes</p>
@@ -141,11 +144,11 @@
             </div>
             <div class="box">
               <div class="check">
-                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-circle-check"></i>
             </div>
             </div>
           </article>
-          <article class="slide8 menu">
+          <article class="menu">
             <div class="content-txt name">
               <h4>Fondant au chocolat</h4>
               <p>Revisité</p>
@@ -155,11 +158,11 @@
             </div>
             <div class="box">
               <div class="check">
-                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-circle-check"></i>
             </div>
             </div>
           </article>
-          <article class="slide9 menu">
+          <article class="menu">
             <div class="content-txt name">
               <h4>Millefeuille croustillant</h4>
               <p>Myrtilles et pâte d’amande</p>
@@ -169,7 +172,7 @@
             </div>
             <div class="box">
               <div class="check">
-                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-circle-check"></i>
             </div>
             </div>
           </article>
@@ -191,7 +194,7 @@
       </div>
       <ul>
         <li>Mention légales</li>
-        <li><a href="mailto:">Contact</a></li>
+        <li><a href="mailto:ohmyfood@mail.fr">Contact</a></li>
       </ul>
     </footer>
   </body>

@@ -1,2 +1,9 @@
-@import "../scss/page/style.scss";
+@import "../scss/variables";
+@import "../scss/base/base";
+@import "../scss/page/index.scss";
 @import "../scss/page/menu.scss";
+@import "../scss/components/header";
+@import "../scss/components/footer";
+@import "../scss/components/heart";
+@import "../scss/components/button";
+@import "../scss/responsive/responsive";

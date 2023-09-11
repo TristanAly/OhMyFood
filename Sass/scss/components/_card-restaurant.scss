@@ -25,11 +25,7 @@
       height: 180px;
       border-radius: 20px 20px 0 0;
   }
-    & .card-content {
-    display: grid;
-    grid-template-columns: 1fr 0.1fr;
-    align-items: center;
-    & .card-txt{
+   .card-txt{
       margin-left: 15px;
           & .card-title {
             margin: 20px 0 8px 0;
@@ -39,5 +35,4 @@
             margin-bottom: 15px;
           }
     }
-  }
 }

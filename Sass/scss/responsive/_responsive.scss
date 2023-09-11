@@ -1,9 +1,14 @@
 @media (min-width: 600px) {
     
     /* ------------------ header -------------------- */
-    header h1 {
-      margin-bottom: 0;
+  
+    header {
+      & .logo {
+        // box-shadow: none;
+        box-shadow: 0px 2px 4px 5px rgb(253, 252, 252);
     }
+  }
+  
     #logo {
       width: 200px;
       height: 35px;
@@ -39,6 +44,25 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
       }
+      .menu-restaurant{
+        width: 80%;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+        & img{
+            left: 0;
+        }
+        & .restaurant-name{
+            justify-content: center;
+            margin: 10px;
+            & h2{
+                margin-right: 20px;
+            }
+        }
+        }    
+        .restaurant-dish{
+         margin: 0 15% 30px 15%;
+        }
       footer {
         width: 97%;
         display: flex;
@@ -47,17 +71,16 @@
         align-items: flex-end;
         & img {
           order: 3;
-          margin: 25px 50px 10px 0;
+          padding: 0px 100px 0px 50px;
         }
         & ul {
           display: flex;
-          margin: 0 80px 0 30px;
         }
         & li {
-          padding: 0 10px;
+          padding: 0 0px 0 40px;
         }
       }
       .icon-text-footer {
-        margin: 10px;
+        padding: 0 20px;
       }
 }

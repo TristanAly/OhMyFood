@@ -1,0 +1,137 @@
+#loader {
+  height: 100vmax;
+  width: 100%;
+  background-color: white;
+  z-index: 50;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  margin-top: 500px;
+  margin-left: 50%;
+}
+
+.loader-quart {
+  border-radius: 50px;
+  border: 6px solid transparent;
+}
+
+.loader-quart:after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  bottom: -6px;
+  right: -6px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+  border-bottom: 2px solid #ff79da;
+  border-top: 2px solid #9356dc;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.fonctionnement {
+  height: 40%;
+  background-color: white;
+  padding: 20px 20px 50px 20px;
+}
+.fonctionnement .banderoles {
+  padding: 10px;
+}
+
+.fonctionnement-banderole {
+  width: 100%;
+  height: 73px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  align-items: center;
+  margin-bottom: 25px;
+}
+.fonctionnement-banderole span {
+  padding-right: 40px;
+}
+.fonctionnement-banderole i {
+  padding-left: 30px;
+  font-size: 20px;
+}
+.fonctionnement-banderole .icon-color {
+  color: gray;
+}
+.fonctionnement-banderole .icon-color-2 {
+  color: #9356dc;
+}
+.fonctionnement-banderole .icon-correction {
+  padding-right: 10px;
+}
+.fonctionnement-banderole p {
+  position: absolute;
+  background-color: #9356dc;
+  padding: 3px 8px;
+  border-radius: 30px;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  left: -10px;
+}
+
+.restaurants {
+  width: 100%;
+  padding: 20px 0 20px 20px;
+  margin: 0;
+}
+
+.restaurants-card {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.restaurants-card .card-link {
+  text-decoration: none;
+  color: black;
+}
+
+.card {
+  width: 90%;
+  background-color: white;
+  border-radius: 20px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+.card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 180px;
+  border-radius: 20px 20px 0 0;
+}
+.card .card-txt {
+  margin-left: 15px;
+}
+.card .card-txt .card-title {
+  margin: 20px 0 8px 0;
+}
+.card .card-txt .card-subtitle {
+  margin-top: 0;
+  margin-bottom: 15px;
+}/*# sourceMappingURL=index.css.map */
